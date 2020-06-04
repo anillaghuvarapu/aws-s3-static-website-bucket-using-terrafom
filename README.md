@@ -12,3 +12,4 @@ Step4: terraform plan --out "<filename>:
 Step5: terraform apply "<filename>"
 Step6: check the AWS console and access the website URL from the output
 Step7: upload sample code to S3 and check if website is working or not
+
