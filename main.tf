@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 module "vpc" {
-  source  = "aws-s3-static-website-bucket-using-terrafom/vpc/aws"
+  source  = "terraform-aws-modules/vpc/aws"
   version = "2.21.0"
 
   name = var.vpc_name
@@ -21,7 +21,7 @@ module "vpc" {
 }
 
 module "ec2_instances" {
-  source  = "aws-s3-static-website-bucket-using-terrafom/ec2-instance/aws"
+  source  = "terraform-aws-modules/ec2-instance/aws"
   version = "2.12.0"
 
   name           = "my-ec2-cluster"
